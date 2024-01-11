@@ -1,0 +1,37 @@
+<div class="p-3">
+  <div class="card p-3">
+    <div>
+      <div class="card-title">
+        <h1>{{ heading }}</h1>
+      </div>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group m-2">
+          <label for="mail">E-mail</label><br />
+          <input
+            id="mail"
+            type="email"
+            placeholder="enter your E-mail"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group m-2">
+          <label for="password">password</label><br />
+          <input
+            id="password"
+            type="password"
+            placeholder="enter your password"
+            class="form-control"
+          />
+        </div>
+        <input class="btn btn-success m-2" type="submit" value="Sign in" />
+        <!-- <div>
+            <img [src]="imgurl" alt="propertyBinding">
+            <input id="password" type="password" placeholder="enter" [disabled]="field">
+            <button (click)="handleClick()">CLICK ME</button>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>

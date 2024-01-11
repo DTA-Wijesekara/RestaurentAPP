@@ -1,0 +1,51 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "username": "waiter",
+        "password": "waiter123",
+        "role": "waiter"
+      }
+    ],
+    "menu": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "price": 5.99
+      },
+      {
+        "id": 2,
+        "name": "Pizza",
+        "price": 8.99
+      },
+      {
+        "id": 3,
+        "name": "Salad",
+        "price": 4.99
+      }
+    ],
+    "orders": [
+      {
+        "id": 1,
+        "userId": 2,
+        "items": [
+          {
+            "itemId": 1,
+            "quantity": 2
+          },
+          {
+            "itemId": 3,
+            "quantity": 1
+          }
+        ],
+        "total": 16.97
+      }
+    ]
+  }
+  
