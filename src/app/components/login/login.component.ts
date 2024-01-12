@@ -3,22 +3,17 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  heading = "Sign IN";
-  field=true;
-  imgurl='';
-  changeImg(){
-    this.imgurl="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg";
+  heading = 'Sign IN';
+  submitted: boolean=false;
+  email:string ="";
+  password:string ="";
+
+  handleSubmit () {
+    this.submitted=true;
+    alert('email => ' + this.email + "\npassword => " + this.password);
+    console.log('email => ' + this.email + "\npassword => " + this.password);
   }
-  handleClick = () => {
-    this.heading = "Butten Clicked";
-    this.field = this.field ? false : true;
-    // if(this.field == true){
-    //   this.field = false;
-    // }else{
-    //   this.field = true;
-    // }
   }
-}
